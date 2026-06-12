@@ -1,0 +1,20 @@
+{
+  "name": "Sprint Burndown Log",
+  "module": "ProjectFlow",
+  "doctype": "DocType",
+  "autoname": "hash",
+  "sort_field": "date",
+  "sort_order": "ASC",
+  "fields": [
+    {"fieldname": "sprint", "fieldtype": "Link", "options": "Agile Sprint", "label": "Sprint", "reqd": 1, "in_list_view": 1, "in_standard_filter": 1},
+    {"fieldname": "date", "fieldtype": "Date", "label": "Date", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+    {"fieldname": "remaining_points", "fieldtype": "Float", "label": "Remaining Story Points", "in_list_view": 1},
+    {"fieldname": "completed_points", "fieldtype": "Float", "label": "Completed Story Points", "in_list_view": 1},
+    {"fieldname": "total_points", "fieldtype": "Float", "label": "Total Story Points"}
+  ],
+  "permissions": [
+    {"role": "Projects Manager", "read": 1},
+    {"role": "Projects User", "read": 1}
+  ]
+}

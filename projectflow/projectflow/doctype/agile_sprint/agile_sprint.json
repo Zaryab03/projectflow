@@ -1,0 +1,25 @@
+{
+  "name": "Agile Sprint",
+  "module": "ProjectFlow",
+  "doctype": "DocType",
+  "autoname": "naming_series:",
+  "naming_series": "SPRINT-.YYYY.-.#####",
+  "title_field": "sprint_name",
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "fields": [
+    {"fieldname": "naming_series", "fieldtype": "Select", "label": "Series", "options": "SPRINT-.YYYY.-.#####", "hidden": 1},
+    {"fieldname": "sprint_name", "fieldtype": "Data", "label": "Sprint Name", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "project", "fieldtype": "Link", "options": "Project", "label": "Project", "reqd": 1, "in_list_view": 1, "in_standard_filter": 1},
+    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Planned\nActive\nCompleted", "default": "Planned", "in_list_view": 1, "in_standard_filter": 1},
+    {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+    {"fieldname": "start_date", "fieldtype": "Date", "label": "Start Date", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "end_date", "fieldtype": "Date", "label": "End Date", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "section_goal", "fieldtype": "Section Break", "label": "Sprint Goal"},
+    {"fieldname": "goal", "fieldtype": "Small Text", "label": "Goal"}
+  ],
+  "permissions": [
+    {"role": "Projects Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 0},
+    {"role": "Projects User", "read": 1, "write": 1, "create": 1}
+  ]
+}

@@ -1,0 +1,5 @@
+[
+ {"doctype": "Workflow State", "name": "Planned", "workflow_state_name": "Planned", "style": "Warning"},
+ {"doctype": "Workflow State", "name": "Confirmed", "workflow_state_name": "Confirmed", "style": "Info"},
+ {"doctype": "Workflow State", "name": "Completed", "workflow_state_name": "Completed", "style": "Success"}
+]

@@ -1,0 +1,140 @@
+{
+ "doctype": "Workspace",
+ "name": "ProjectFlow Executive",
+ "title": "ProjectFlow Executive",
+ "label": "ProjectFlow Executive",
+ "module": "ProjectFlow",
+ "icon": "bar-chart",
+ "public": 1,
+ "is_hidden": 0,
+ "hide_custom": 0,
+ "for_user": "",
+ "parent_page": "",
+ "restrict_to_domain": "",
+ "sequence_id": 3.0,
+ "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>ProjectFlow - Executive Workspace</b></span>\", \"col\": 12}}, {\"id\": \"sc1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Projects\", \"col\": 3}}, {\"id\": \"sc2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Portfolio Overview\", \"col\": 3}}, {\"id\": \"sc3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Project Profitability\", \"col\": 3}}, {\"id\": \"sc4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Variance\", \"col\": 3}}, {\"id\": \"sp1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"hdr2\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Portfolios & Financials</b></span>\", \"col\": 12}}, {\"id\": \"card1\", \"type\": \"card\", \"data\": {\"card_name\": \"Portfolio Management\", \"col\": 4}}, {\"id\": \"card2\", \"type\": \"card\", \"data\": {\"card_name\": \"Financial Reports\", \"col\": 4}}, {\"id\": \"card3\", \"type\": \"card\", \"data\": {\"card_name\": \"Projects\", \"col\": 4}}]",
+ "charts": [],
+ "number_cards": [],
+ "quick_lists": [],
+ "custom_blocks": [],
+ "roles": [],
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "Portfolio Management",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Project Portfolio",
+   "link_to": "Project Portfolio",
+   "link_type": "DocType",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Portfolio Overview",
+   "link_to": "Portfolio Overview",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Card Break",
+   "label": "Financial Reports",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Project Profitability",
+   "link_to": "Project Profitability",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Budget Variance",
+   "link_to": "Budget Variance",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Card Break",
+   "label": "Projects",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Project",
+   "link_to": "Project",
+   "link_type": "DocType",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Risk Register",
+   "link_to": "Risk Register",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  }
+ ],
+ "shortcuts": [
+  {
+   "type": "DocType",
+   "label": "All Projects",
+   "link_to": "Project",
+   "doc_view": "List",
+   "color": "Blue"
+  },
+  {
+   "type": "Report",
+   "label": "Portfolio Overview",
+   "link_to": "Portfolio Overview",
+   "color": "Green"
+  },
+  {
+   "type": "Report",
+   "label": "Project Profitability",
+   "link_to": "Project Profitability",
+   "color": "Orange"
+  },
+  {
+   "type": "Report",
+   "label": "Budget Variance",
+   "link_to": "Budget Variance",
+   "color": "Red"
+  }
+ ]
+}

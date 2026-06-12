@@ -1,0 +1,19 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project"},
+  {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "\nOpen\nCompleted\nCancelled"}
+ ],
+ "is_standard": "Yes",
+ "module": "ProjectFlow",
+ "name": "Project Profitability",
+ "ref_doctype": "Project",
+ "report_name": "Project Profitability",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "Projects User"},
+  {"role": "Projects Manager"}
+ ]
+}

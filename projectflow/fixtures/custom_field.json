@@ -1,0 +1,244 @@
+[
+ {
+  "doctype": "Custom Field",
+  "name": "Project-custom_portfolio",
+  "dt": "Project",
+  "fieldname": "custom_portfolio",
+  "fieldtype": "Link",
+  "options": "Project Portfolio",
+  "label": "Portfolio",
+  "insert_after": "priority",
+  "in_standard_filter": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-pf_section_break",
+  "dt": "Project",
+  "fieldname": "pf_section_break",
+  "fieldtype": "Section Break",
+  "label": "ProjectFlow Insights",
+  "insert_after": "custom_portfolio",
+  "collapsible": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-custom_health_score",
+  "dt": "Project",
+  "fieldname": "custom_health_score",
+  "fieldtype": "Percent",
+  "label": "Health Score",
+  "insert_after": "pf_section_break",
+  "read_only": 1,
+  "description": "Auto-calculated from progress, overdue tasks and budget variance"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-custom_risk_score",
+  "dt": "Project",
+  "fieldname": "custom_risk_score",
+  "fieldtype": "Percent",
+  "label": "Risk Score",
+  "insert_after": "custom_health_score",
+  "read_only": 1,
+  "description": "Auto-calculated based on overdue and blocked tasks"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-pf_column_break",
+  "dt": "Project",
+  "fieldname": "pf_column_break",
+  "fieldtype": "Column Break",
+  "insert_after": "custom_risk_score"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-custom_client_satisfaction",
+  "dt": "Project",
+  "fieldname": "custom_client_satisfaction",
+  "fieldtype": "Rating",
+  "label": "Client Satisfaction",
+  "insert_after": "pf_column_break"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-custom_forecast_completion_date",
+  "dt": "Project",
+  "fieldname": "custom_forecast_completion_date",
+  "fieldtype": "Date",
+  "label": "Forecast Completion Date",
+  "insert_after": "custom_client_satisfaction",
+  "description": "Projected completion date based on current task velocity"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Project-custom_budget_utilization",
+  "dt": "Project",
+  "fieldname": "custom_budget_utilization",
+  "fieldtype": "Percent",
+  "label": "Budget Utilization",
+  "insert_after": "custom_forecast_completion_date",
+  "read_only": 1,
+  "description": "Actual cost (timesheet + purchase + consumed material) as a percentage of Estimated Cost"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-pf_section_break",
+  "dt": "Task",
+  "fieldname": "pf_section_break",
+  "fieldtype": "Section Break",
+  "label": "ProjectFlow",
+  "insert_after": "color"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-custom_story_points",
+  "dt": "Task",
+  "fieldname": "custom_story_points",
+  "fieldtype": "Int",
+  "label": "Story Points",
+  "insert_after": "pf_section_break",
+  "in_list_view": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-pf_column_break",
+  "dt": "Task",
+  "fieldname": "pf_column_break",
+  "fieldtype": "Column Break",
+  "insert_after": "custom_story_points"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-custom_board_status",
+  "dt": "Task",
+  "fieldname": "custom_board_status",
+  "fieldtype": "Select",
+  "label": "Board Status",
+  "options": "Backlog\nTo Do\nIn Progress\nIn Review\nDone\nBlocked",
+  "default": "Backlog",
+  "insert_after": "pf_column_break",
+  "in_standard_filter": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-custom_sprint",
+  "dt": "Task",
+  "fieldname": "custom_sprint",
+  "fieldtype": "Link",
+  "options": "Agile Sprint",
+  "label": "Sprint",
+  "insert_after": "custom_board_status",
+  "in_standard_filter": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-custom_epic",
+  "dt": "Task",
+  "fieldname": "custom_epic",
+  "fieldtype": "Link",
+  "options": "Epic",
+  "label": "Epic",
+  "insert_after": "custom_sprint",
+  "in_standard_filter": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-custom_is_critical",
+  "dt": "Task",
+  "fieldname": "custom_is_critical",
+  "fieldtype": "Check",
+  "label": "Critical Path Task",
+  "insert_after": "custom_epic",
+  "read_only": 1,
+  "in_standard_filter": 1,
+  "description": "Auto-calculated: this task has zero schedule slack"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task-custom_total_slack",
+  "dt": "Task",
+  "fieldname": "custom_total_slack",
+  "fieldtype": "Float",
+  "label": "Slack (Days)",
+  "insert_after": "custom_is_critical",
+  "read_only": 1,
+  "precision": "1"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Task Depends On-dependency_type",
+  "dt": "Task Depends On",
+  "fieldname": "dependency_type",
+  "fieldtype": "Select",
+  "label": "Dependency Type",
+  "options": "Finish to Start\nStart to Start\nFinish to Finish\nStart to Finish",
+  "default": "Finish to Start",
+  "insert_after": "task",
+  "in_list_view": 1,
+  "columns": 2
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-custom_daily_capacity_hours",
+  "dt": "Employee",
+  "fieldname": "custom_daily_capacity_hours",
+  "fieldtype": "Float",
+  "label": "Daily Capacity (Hours)",
+  "insert_after": "holiday_list",
+  "default": "8",
+  "description": "Used by ProjectFlow Resource Planning to calculate utilization and over-allocation"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Issue-custom_task",
+  "dt": "Issue",
+  "fieldname": "custom_task",
+  "fieldtype": "Link",
+  "options": "Task",
+  "label": "Task",
+  "insert_after": "project",
+  "in_standard_filter": 1,
+  "description": "Task this bug/issue is linked to. Must belong to the same Project."
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Issue-custom_severity",
+  "dt": "Issue",
+  "fieldname": "custom_severity",
+  "fieldtype": "Select",
+  "options": "Low\nMedium\nHigh\nCritical",
+  "label": "Severity",
+  "default": "Medium",
+  "insert_after": "custom_task",
+  "in_list_view": 1,
+  "in_standard_filter": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Issue-pf_section_repro",
+  "dt": "Issue",
+  "fieldname": "pf_section_repro",
+  "fieldtype": "Section Break",
+  "label": "Bug Details",
+  "insert_after": "resolution_details",
+  "collapsible": 1
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Issue-custom_steps_to_reproduce",
+  "dt": "Issue",
+  "fieldname": "custom_steps_to_reproduce",
+  "fieldtype": "Text Editor",
+  "label": "Steps to Reproduce",
+  "insert_after": "pf_section_repro"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Issue-custom_environment",
+  "dt": "Issue",
+  "fieldname": "custom_environment",
+  "fieldtype": "Data",
+  "label": "Environment / Version",
+  "insert_after": "custom_steps_to_reproduce"
+ }
+]

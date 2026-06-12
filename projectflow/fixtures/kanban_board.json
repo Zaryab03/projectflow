@@ -1,0 +1,39 @@
+[
+ {
+  "doctype": "Kanban Board",
+  "name": "ProjectFlow Task Board",
+  "kanban_board_name": "ProjectFlow Task Board",
+  "reference_doctype": "Task",
+  "field_name": "custom_board_status",
+  "private": 0,
+  "show_labels": 1,
+  "filters": "[]",
+  "fields": "[]",
+  "columns": [
+   {"doctype": "Kanban Board Column", "column_name": "Backlog", "indicator": "Gray", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "To Do", "indicator": "Blue", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "In Progress", "indicator": "Orange", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "In Review", "indicator": "Purple", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "Done", "indicator": "Green", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "Blocked", "indicator": "Red", "status": "Active"}
+  ]
+ },
+ {
+  "doctype": "Kanban Board",
+  "name": "ProjectFlow Bug Board",
+  "kanban_board_name": "ProjectFlow Bug Board",
+  "reference_doctype": "Issue",
+  "field_name": "status",
+  "private": 0,
+  "show_labels": 1,
+  "filters": "[]",
+  "fields": "[]",
+  "columns": [
+   {"doctype": "Kanban Board Column", "column_name": "Open", "indicator": "Red", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "Replied", "indicator": "Blue", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "On Hold", "indicator": "Orange", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "Resolved", "indicator": "Green", "status": "Active"},
+   {"doctype": "Kanban Board Column", "column_name": "Closed", "indicator": "Gray", "status": "Active"}
+  ]
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project"},
+  {"fieldname": "status", "label": "Sprint Status", "fieldtype": "Select", "options": "\nPlanned\nActive\nCompleted"}
+ ],
+ "is_standard": "Yes",
+ "module": "ProjectFlow",
+ "name": "Sprint Velocity",
+ "ref_doctype": "Agile Sprint",
+ "report_name": "Sprint Velocity",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "Projects User"},
+  {"role": "Projects Manager"}
+ ]
+}

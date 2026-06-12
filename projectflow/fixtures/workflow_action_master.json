@@ -1,0 +1,5 @@
+[
+ {"doctype": "Workflow Action Master", "name": "Confirm", "workflow_action_name": "Confirm"},
+ {"doctype": "Workflow Action Master", "name": "Complete", "workflow_action_name": "Complete"},
+ {"doctype": "Workflow Action Master", "name": "Reopen", "workflow_action_name": "Reopen"}
+]

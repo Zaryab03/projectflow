@@ -1,0 +1,19 @@
+[
+ {
+  "doctype": "Notification",
+  "name": "Project Risk Escalation",
+  "subject": "High-Severity Risk: {{ doc.risk_name }}",
+  "document_type": "Project Risk",
+  "is_standard": 0,
+  "event": "Save",
+  "enabled": 1,
+  "channel": "System Notification",
+  "send_system_notification": 1,
+  "condition": "doc.status == \"Open\" and doc.risk_score >= 6",
+  "message": "<p>Risk <strong>{{ doc.risk_name }}</strong> on project <strong>{{ doc.project }}</strong> has a high risk score ({{ doc.risk_score }}/9) and needs attention.</p>",
+  "recipients": [
+   {"receiver_by_document_field": "owner_user"},
+   {"receiver_by_role": "Projects Manager"}
+  ]
+ }
+]

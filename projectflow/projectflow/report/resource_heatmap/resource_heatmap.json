@@ -1,0 +1,20 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "from_date", "label": "From Date", "fieldtype": "Date", "reqd": 1, "default": "Today"},
+  {"fieldname": "to_date", "label": "To Date", "fieldtype": "Date", "reqd": 1, "default": "Today"},
+  {"fieldname": "employee", "label": "Employee", "fieldtype": "Link", "options": "Employee"}
+ ],
+ "is_standard": "Yes",
+ "module": "ProjectFlow",
+ "name": "Resource Heatmap",
+ "ref_doctype": "Resource Allocation",
+ "report_name": "Resource Heatmap",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "Projects User"},
+  {"role": "Projects Manager"}
+ ]
+}

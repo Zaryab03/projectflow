@@ -1,0 +1,22 @@
+[
+ {
+  "doctype": "Workflow",
+  "name": "Resource Allocation Approval",
+  "workflow_name": "Resource Allocation Approval",
+  "document_type": "Resource Allocation",
+  "workflow_state_field": "status",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "override_status": 0,
+  "states": [
+   {"state": "Planned", "doc_status": "0", "allow_edit": "Projects User"},
+   {"state": "Confirmed", "doc_status": "0", "allow_edit": "Projects Manager"},
+   {"state": "Completed", "doc_status": "0", "allow_edit": "Projects User"}
+  ],
+  "transitions": [
+   {"state": "Planned", "action": "Confirm", "next_state": "Confirmed", "allowed": "Projects Manager"},
+   {"state": "Confirmed", "action": "Complete", "next_state": "Completed", "allowed": "Projects User"},
+   {"state": "Confirmed", "action": "Reopen", "next_state": "Planned", "allowed": "Projects Manager"}
+  ]
+ }
+]

@@ -1,0 +1,207 @@
+{
+ "doctype": "Workspace",
+ "name": "ProjectFlow Manager",
+ "title": "ProjectFlow Manager",
+ "label": "ProjectFlow Manager",
+ "module": "ProjectFlow",
+ "icon": "project",
+ "public": 1,
+ "is_hidden": 0,
+ "hide_custom": 0,
+ "for_user": "",
+ "parent_page": "",
+ "restrict_to_domain": "",
+ "sequence_id": 2.0,
+ "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>ProjectFlow - Manager Workspace</b></span>\", \"col\": 12}}, {\"id\": \"sc1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Active Projects\", \"col\": 3}}, {\"id\": \"sc2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Project Timeline\", \"col\": 3}}, {\"id\": \"sc3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Resource Allocation\", \"col\": 3}}, {\"id\": \"sc4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Delayed Tasks Summary\", \"col\": 3}}, {\"id\": \"sp1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"hdr2\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Resource Planning</b></span>\", \"col\": 12}}, {\"id\": \"card1\", \"type\": \"card\", \"data\": {\"card_name\": \"Resource Planning\", \"col\": 4}}, {\"id\": \"card2\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports & Analytics\", \"col\": 4}}, {\"id\": \"card3\", \"type\": \"card\", \"data\": {\"card_name\": \"Projects\", \"col\": 4}}, {\"id\": \"sp2\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"hdr3\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Risk Management</b></span>\", \"col\": 12}}, {\"id\": \"card4\", \"type\": \"card\", \"data\": {\"card_name\": \"Risk Management\", \"col\": 4}}]",
+ "charts": [],
+ "number_cards": [],
+ "quick_lists": [],
+ "custom_blocks": [],
+ "roles": [],
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "Resource Planning",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Resource Allocation",
+   "link_to": "Resource Allocation",
+   "link_type": "DocType",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Resource Utilization",
+   "link_to": "Resource Utilization",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Resource Heatmap",
+   "link_to": "Resource Heatmap",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Card Break",
+   "label": "Reports & Analytics",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Sprint Velocity",
+   "link_to": "Sprint Velocity",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Sprint Burndown",
+   "link_to": "Sprint Burndown",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Critical Path",
+   "link_to": "Critical Path",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Delayed Tasks Summary",
+   "link_to": "Delayed Tasks Summary",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Card Break",
+   "label": "Projects",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Project",
+   "link_to": "Project",
+   "link_type": "DocType",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Task",
+   "link_to": "Task",
+   "link_type": "DocType",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Card Break",
+   "label": "Risk Management",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Project Risk",
+   "link_to": "Project Risk",
+   "link_type": "DocType",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 1
+  },
+  {
+   "type": "Link",
+   "label": "Risk Register",
+   "link_to": "Risk Register",
+   "link_type": "Report",
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "link_count": 0,
+   "onboard": 0
+  }
+ ],
+ "shortcuts": [
+  {
+   "type": "DocType",
+   "label": "Active Projects",
+   "link_to": "Project",
+   "doc_view": "List",
+   "color": "Blue",
+   "format": "{} Open",
+   "stats_filter": "{\n    \"status\": \"Open\"\n}"
+  },
+  {
+   "type": "DocType",
+   "label": "Project Timeline",
+   "link_to": "Task",
+   "doc_view": "Gantt",
+   "color": "Orange"
+  },
+  {
+   "type": "DocType",
+   "label": "Resource Allocation",
+   "link_to": "Resource Allocation",
+   "doc_view": "List",
+   "color": "Green"
+  },
+  {
+   "type": "Report",
+   "label": "Delayed Tasks Summary",
+   "link_to": "Delayed Tasks Summary",
+   "color": "Red"
+  }
+ ]
+}

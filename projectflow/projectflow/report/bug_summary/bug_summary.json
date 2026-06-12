@@ -1,0 +1,20 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project"},
+  {"fieldname": "severity", "label": "Severity", "fieldtype": "Select", "options": "\nLow\nMedium\nHigh\nCritical"},
+  {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "\nOpen\nReplied\nOn Hold\nResolved\nClosed"}
+ ],
+ "is_standard": "Yes",
+ "module": "ProjectFlow",
+ "name": "Bug Summary",
+ "ref_doctype": "Issue",
+ "report_name": "Bug Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "Projects User"},
+  {"role": "Projects Manager"}
+ ]
+}

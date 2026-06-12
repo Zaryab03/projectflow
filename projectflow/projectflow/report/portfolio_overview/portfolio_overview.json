@@ -1,0 +1,18 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "portfolio", "label": "Portfolio", "fieldtype": "Link", "options": "Project Portfolio"}
+ ],
+ "is_standard": "Yes",
+ "module": "ProjectFlow",
+ "name": "Portfolio Overview",
+ "ref_doctype": "Project Portfolio",
+ "report_name": "Portfolio Overview",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "Projects User"},
+  {"role": "Projects Manager"}
+ ]
+}

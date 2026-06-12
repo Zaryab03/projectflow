@@ -1,0 +1,7 @@
+[
+ {"doctype": "Issue Type", "name": "Bug", "description": "A defect in existing functionality"},
+ {"doctype": "Issue Type", "name": "Feature Request", "description": "A request for new functionality"},
+ {"doctype": "Issue Type", "name": "Improvement", "description": "An enhancement to existing functionality"},
+ {"doctype": "Issue Type", "name": "Question", "description": "A question that needs a response"},
+ {"doctype": "Issue Type", "name": "Task", "description": "General work item raised as an issue"}
+]

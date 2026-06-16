@@ -6,6 +6,9 @@ it extends them with the agile, resourcing, risk, financial, and reporting workf
 modern delivery teams expect — while continuing to use Frappe's built-in assignments,
 comments, tags, Kanban, Gantt, and costing features.
 
+<img width="1366" height="601" alt="Screenshot from 2026-06-17 04-03-26" src="https://github.com/user-attachments/assets/3749f32a-7b10-4456-b035-917828839c1e" />
+
+
 After installation you get three new Workspaces (**ProjectFlow Team**, **ProjectFlow
 Manager**, **ProjectFlow Executive**) that act as your starting points for everything
 below.
